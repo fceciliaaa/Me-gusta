@@ -1,7 +1,8 @@
 function meGusta(elemento){
-    let boton = elemento.closest(".card-1");
-    let contador= boton.querySelector(".numero-likes");
-    let numero= Number(contador.innerText);
-    numero++;
-    contador.innerText = numero;
+    let contenidoCard1 = elemento.closest(".card-1");
+    let numeroLikes= contenidoCard1.querySelector(".numero-likes");
+    let contador= Number(numeroLikes.innerText);
+    contador++;
+    numeroLikes.innerText = contador;
 }
+
